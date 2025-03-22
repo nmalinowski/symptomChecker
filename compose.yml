@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: ./main
+      dockerfile: Dockerfile
+      network: host
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+    ports:
+      - "5001:5000"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    environment:
+      - FLASK_ENV=production
+      - MISTRAL_API_KEY=
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    volumes:
+      - ./data:/app/data

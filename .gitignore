@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# macOS folder attributes
+._*
+.Spotlight-V100
+.Trashes
+
+# macOS metadata files
+*.swp
+*.lock
+*.log
+
+# VSCode settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Compiled output
+tmp/
+temp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.pdb
+
+# Coverage reports
+/coverage/
+
+# IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+.env
+/data/*.json
+.safari-extension-build/
+instance/
+venv/

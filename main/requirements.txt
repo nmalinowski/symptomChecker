@@ -1,0 +1,8 @@
+Flask
+gunicorn
+requests
+python-dotenv
+tenacity
+duckduckgo_search
+gevent
+typing_extensions
